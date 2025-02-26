@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whisper.Auth", "Whisper.Auth\Whisper.Auth.csproj", "{0E14CBF2-7CC0-489B-B934-4C59260557EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whisper.Messaging", "Whisper.Messaging\Whisper.Messaging.csproj", "{34A5E36B-8CDD-4F4C-ADFC-71AA83B1BCFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whisper.Data", "Whisper.Data\Whisper.Data.csproj", "{A28268AA-007D-49D0-A084-2C4CDAA8EBFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		.env.docker-compose = .env.docker-compose
+		.gitignore = .gitignore
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whisper.Tests", "Whisper.Tests\Whisper.Tests.csproj", "{B11C9097-FAC0-4A41-BCEA-CD60147BA950}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E14CBF2-7CC0-489B-B934-4C59260557EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E14CBF2-7CC0-489B-B934-4C59260557EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E14CBF2-7CC0-489B-B934-4C59260557EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E14CBF2-7CC0-489B-B934-4C59260557EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34A5E36B-8CDD-4F4C-ADFC-71AA83B1BCFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34A5E36B-8CDD-4F4C-ADFC-71AA83B1BCFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34A5E36B-8CDD-4F4C-ADFC-71AA83B1BCFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34A5E36B-8CDD-4F4C-ADFC-71AA83B1BCFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A28268AA-007D-49D0-A084-2C4CDAA8EBFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A28268AA-007D-49D0-A084-2C4CDAA8EBFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A28268AA-007D-49D0-A084-2C4CDAA8EBFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A28268AA-007D-49D0-A084-2C4CDAA8EBFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B11C9097-FAC0-4A41-BCEA-CD60147BA950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B11C9097-FAC0-4A41-BCEA-CD60147BA950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B11C9097-FAC0-4A41-BCEA-CD60147BA950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B11C9097-FAC0-4A41-BCEA-CD60147BA950}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {062E34AC-5D8E-4460-A710-88DE03F4034B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+services:
+
+   whisper.database:
+        image: postgres:17
+        container_name: whisper.postgresql
+        ports:
+            - ${POSTGRES_EXTERNAL_PORT}:${POSTGRES_INTERNAL_PORT}
+        environment:
+            POSTGRES_DB: ${POSTGRES_DB}
+            POSTGRES_USER: ${POSTGRES_USER}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+        volumes:
+            - pg-data:/var/lib/postgresql/data
+
+   whisper.pgadmin:
+        image: dpage/pgadmin4:9.0.0
+        container_name: whisper.pgadmin
+        environment:
+            PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+            PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+        ports:
+            - ${PGADMIN_EXTERNAL_PORT}:${PGADMIN_INTERNAL_PORT}
+        volumes:
+            - pgadmin-data:/var/lib/pgadmin/data
+        depends_on:
+            - whisper.database
+
+volumes:
+   pg-data:    
+   pgadmin-data: 
